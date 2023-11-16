@@ -1,4 +1,5 @@
 class Graph(object):
+
     def __init__(self,graph=None) -> None:
         if graph == None:
             graph = {}
@@ -41,31 +42,3 @@ class Graph(object):
     def getGraph(self):
         return self.__graph
     
-
-## Example:
-
-myGraph = Graph()
-
-# Add vertices
-myGraph.addVertex('A')
-myGraph.addVertex('B')
-myGraph.addVertex('C')
-myGraph.addVertex('D')
-myGraph.addVertex('E')
-myGraph.addVertex('F')
-
-# Add weighted edges
-myGraph.addEdges(('A', 'B', 4))
-myGraph.addEdges(('A', 'D', 1))
-myGraph.addEdges(('B', 'C', 10))
-myGraph.addEdges(('B', 'D', 2))
-myGraph.addEdges(('B', 'F', 2))
-myGraph.addEdges(('C', 'D', 9))
-myGraph.addEdges(('C', 'E', 8))
-myGraph.addEdges(('D', 'E', 3))
-myGraph.addEdges(('E', 'F', 5))
-
-# Print vertices and edges
-print("Vertices:", myGraph.vertices())
-print("Edges:", myGraph.edges())
-
